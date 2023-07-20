@@ -27,10 +27,16 @@ export default function ProductsPage() {
       </Helmet>
 
       <Container>
+         {
+         // Titulo de la pagina
+         }
         <Typography variant="h4" sx={{ mb: 5 }}>
           Products
         </Typography>
 
+         {
+          // Bloque de parametros de contenido
+         }
         <Stack direction="row" flexWrap="wrap-reverse" alignItems="center" justifyContent="flex-end" sx={{ mb: 5 }}>
           <Stack direction="row" spacing={1} flexShrink={0} sx={{ my: 1 }}>
             <ProductFilterSidebar
@@ -41,8 +47,12 @@ export default function ProductsPage() {
             <ProductSort />
           </Stack>
         </Stack>
+         {
+         // Lista de contenido 
+        }
 
         <ProductList products={PRODUCTS} />
+
         <ProductCartWidget />
       </Container>
     </>
